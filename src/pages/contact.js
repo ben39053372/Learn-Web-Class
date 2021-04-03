@@ -5,14 +5,28 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Learn Next Js Web</title>
+        <title>contact</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        here is home
+        here is contact
       </main>
 
+    </div>
+  )
+}
+
+const ListOfMemeber = () => {
+  return (
+    <div>
+      <ul>
+        {customers.map((cust, i) => {
+          return (
+            <li key={i}>{cust.id} : {cust.name}</li>
+          )
+        })}
+      </ul>
     </div>
   )
 }
